@@ -18,8 +18,15 @@ public class AutomationSession1 {
 
         leadActor.walkTo("edge of scene");
         supportActor.walkTo("edge of scene");
+    }
 
+    {
         Car car = new Car();
         car.color = "red";
+        car.goTo("Kiyv");
+        Car secondCar = new Car();
+        secondCar.color = "blue";
+        secondCar.goTo("Odessa");
+
     }
 }

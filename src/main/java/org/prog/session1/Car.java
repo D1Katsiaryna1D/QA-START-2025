@@ -5,7 +5,7 @@ public class Car {
 
     public String color;
 
-    public void goTo() {
+    public void goTo(String city) {
         System.out.println(color + " car is going somewhere");
     }
 
@@ -13,7 +13,7 @@ public class Car {
     public boolean equals(Object obj) {
         if (obj instanceof Car) {
             Car car = (Car) obj;
-            return this.color.equals(car.color);
+            return this.color.equals(car.color) ;
         }
         return false;
     }
