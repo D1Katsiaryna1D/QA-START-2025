@@ -18,4 +18,10 @@ public class CarPainter {
             car.color = color;
         }
     }
+    public void polishCar (Car2 car){
+        System.out.println("polishing" + car.color);
+        }
+
+    public void polishCar(Car2 carToPaint, String newCarColor) {
+    }
 }

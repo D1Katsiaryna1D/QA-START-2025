@@ -16,6 +16,7 @@ public class CarService {
 
             coffeeBreak(vova);
             sasha.paintCar(carToPaint, newCarColor);
+            sasha.polishCar(carToPaint, newCarColor);
         } else {
             coffeeBreak(vova);
             sasha.prepareCarForPainting(carToPaint);
