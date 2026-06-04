@@ -15,8 +15,8 @@ public class Mazda implements ICar {
     }
 
     public void driveTo(String destination, String from, String stoppingAt) {
-        System.out.println("Mazada drives from " + from + " to " + destination);
-        System.out.println("Mazada stopping at " + stoppingAt);
+        System.out.println("Mazda drives from " + from + " to " + destination);
+        System.out.println("Mazda stopping at " + stoppingAt);
     }
 
     public void manualGearSwitch(int gear) {
@@ -35,20 +35,17 @@ public class Mazda implements ICar {
 
     @Override
     public void brake() {
-        System.out.println("Mazba brakes");
+        System.out.println("Mazda brakes");
     }
 
 
-        public void driveTo (String destination, String from, String stoppingAt,int passegers, boolean splitGaz){
-            System.out.println("Mazda drive from" + stoppingAt + "to" + destination);
-            System.out.println("Number of passegers " + passegers);
-            if (splitGaz) {
-                int payment = 8;
-                System.out.println("Passegers pay" + payment + "usd");
-                System.out.println("Number of passegers" + passegers * payment + "usd");
+    public void driveTo (String destination, String from, String stoppingAt,int passengers, boolean splitGaz){
+        System.out.println("Mazda drive from" + stoppingAt + "to" + destination);
+        System.out.println("Number of passengers " + passengers + from);
+        if (splitGaz) {
+            int payment = 8;
+            System.out.println("Passengers pay" + payment + "usd");
+            System.out.println("Number of passengers" + passengers * payment + "usd");
             }
-
-
-        }
-
     }
+}
