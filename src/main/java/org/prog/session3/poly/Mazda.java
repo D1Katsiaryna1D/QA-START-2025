@@ -37,4 +37,18 @@ public class Mazda implements ICar {
     public void brake() {
         System.out.println("Mazba brakes");
     }
-}
+
+
+        public void driveTo (String destination, String from, String stoppingAt,int passegers, boolean splitGaz){
+            System.out.println("Mazda drive from" + stoppingAt + "to" + destination);
+            System.out.println("Number of passegers " + passegers);
+            if (splitGaz) {
+                int payment = 8;
+                System.out.println("Passegers pay" + payment + "usd");
+                System.out.println("Number of passegers" + passegers * payment + "usd");
+            }
+
+
+        }
+
+    }
