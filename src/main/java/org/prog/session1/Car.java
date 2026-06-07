@@ -7,6 +7,10 @@ public class Car {
 
     public String color;
 
+    public String model;
+
+    public int year;
+
     public void goTo() {
         System.out.println(color + " car is going somewhere");
     }
@@ -15,22 +19,18 @@ public class Car {
     public boolean equals(Object obj) {
         if (obj instanceof Car) {
             Car car = (Car) obj;
-            return this.color.equals(car.color);
+            return this.color.equals(car.color)&& model.equals(car.model);
         }
         return false;
     }
 
     @Override
-    public int hashCode() {
-        return color.hashCode();
-    }
+    public int hashCode() { return color.hashCode() + model.hashCode();}
 
     @Override
     public String toString() {
         return "Car : " + color;
     }
 
-    public String getColor() {
-        return color;
-    }
+    public String getColor() { return color;}
 }
