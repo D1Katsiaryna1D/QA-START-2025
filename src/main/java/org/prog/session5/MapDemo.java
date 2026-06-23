@@ -21,18 +21,39 @@ public class MapDemo {
 
         for (String someString : list1) {
             System.out.println("Citizen 17253761525 has : " + someString);
+
+            Map<String, List<String>> cars = new HashMap<>();
+            cars.put ("Dania", new ArrayList<>());
+            cars.put ("Sasha", new ArrayList<>());
+            cars.put ("Katia", new ArrayList<>());
+            cars.put ("Kristina", new ArrayList<>());
+
+            cars.get("Dania").add("Car #2");
+            cars.get("Sasha").add("Car #1");
+            cars.get("Katia").add("Car #3");
+            cars.get("Kristina").add("Car #2");
+
+            for (String owner : cars.keySet()) {
+                System.out.println(owner + "owns" + cars.get(owner).size() + "cars");
+                for (String oneCar: cars.get(owner)) {
+                    System.out.println(oneCar + "color: " + randomColor());
+                }
+            }
         }
     }
 
     public static String randomColor() {
-        Random random = new Random();
-        return switch (random.nextInt(5)) {
-            case 0 -> "red";
-            case 1 -> "green";
-            case 2 -> "blue";
-            case 3 -> "yellow";
-            case 4 -> "pink";
-            default -> "black";
-        };
+            Random random = new Random();
+            return switch (random.nextInt(5)) {
+                case 0 -> "red";
+                case 1 -> "green";
+                case 2 -> "blue";
+                case 3 -> "yellow";
+                case 4 -> "pink";
+                default -> "black";
+
+            };
+        }
     }
-}
+
+
